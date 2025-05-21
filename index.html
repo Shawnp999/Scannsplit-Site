@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Scan and Split | Сканируй и дели чеки</title>
+    <meta name="description" content="Приложение ScanNSplit позволяет пользователям делить расходы, управлять чеками и вести учет платежей.">
+    <meta name="keywords" content="Scan and Split, поделить чек, разделить чек, чек на компанию, split bill, делить чек">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="Scan and Split">
+    <meta property="og:site_name" content="scan-and-split.com">
+    <meta property="og:title" content="Scan and Split | Сканируй и дели чеки">
+    <meta property="og:description" content="Приложение ScanNSplit позволяет пользователям делить расходы, управлять чеками и вести учет платежей.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/cover.jpg">
+    <meta property="og:image:alt" content="Scan and Split | Сканируй и дели чеки">
+    <meta property="og:url" content= "https://scan-split.com">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preload" href="./fonts/Unbounded-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/Unbounded-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="./scripts/script.js"></script>
+</head>
+<body>
+    <header class="header js-header">
+    <a 
+        href="/" 
+        class="header__logo">
+        <img src="./images/logo/logo-color.svg" alt="" aria-hidden="true" focusable="false">
+        <span class="sr-only">Главная</span>
+    </a>
+    <nav class="header__nav">
+        <ul class="header__nav-list">
+            <li><a href="#hero" class="header__nav-link js-nav-link">Приложение</a></li>
+            <li><a href="#possibilities" class="header__nav-link js-nav-link">Возможности</a></li>
+            <li><a href="#team" class="header__nav-link js-nav-link">О команде</a></li>
+        </ul>
+    </nav>
+    <div class="btn-group">
+        <div class="header__select select js-select">
+            <button
+                class="select__button btn btn--default js-select-btn"
+                role="combobox"
+                aria-label="dropdown button"
+                aria-haspopup="listbox"
+                aria-expanded="false"
+                aria-controls="select-dropdown">
+                <span>
+                    RU
+                </span>
+                <svg aria-hidden="true" focusable="false">
+                    <use xlink:href="images/sprite.svg#chevron-down"></use>
+                </svg>
+            </button>
+            <div class="select__dropdown">
+                <ul role="listbox" class="select__dropdown-wrap">
+                    <li role="option">
+                        <a href=".#" class="select__option js-select-option">English</a>
+                    </li>
+                    <li role="option">
+                        <a href=".#" class="select__option select__option--active js-select-option">Русский</a>
+                    </li>
+                    <li role="option">
+                        <a href=".#" class="select__option js-select-option">العربية</a>
+                    </li>
+                    <li role="option">
+                        <a href=".#" class="select__option js-select-option">עברית</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href=".#" class="header__download-btn btn btn--primary">
+            <span>Скачать приложение</span>
+            <span>Скачать</span>
+            <svg aria-hidden="true" focusable="false">
+                <use xlink:href="images/sprite.svg#chevron-right"></use>
+            </svg>
+        </a>
+    </div>
+</header>
+    <main>
+        <section class="hero" id="hero">
+    <div class="container">
+        <div class="hero__content">
+            <div class="hero__info">
+                <h1 class="hero__title">Сканируй чек<br>и дели его на всех</h1>
+                <p class="hero__desc">Удобное приложение для тех, кому нужно поделить чек на&nbsp;всю компанию</p>
+                <ul class="hero__badge-list">
+                    <li class="hero__badge">Подели</li>
+                    <li class="hero__badge">Отправь</li>
+                    <li class="hero__badge">Оплати только свое</li>
+                </ul>
+                <div class="hero__btn-group btn-group">
+                    <a 
+                        href=".#" 
+                        target="_blank" 
+                        rel="noopener" 
+                        class="download__link download__link--appstore">
+                        <img src="./images/logo-appstore.svg" alt="" aria-hidden="true" focusable="false">
+                        <span class="sr-only">Скачать приложение в AppStore</span>
+                    </a>
+                    <a 
+                        href=".#" 
+                        target="_blank" 
+                        rel="noopener" 
+                        class="download__link download__link--googleplay">
+                        <img src="./images/logo-googleplay.svg" alt="" aria-hidden="true" focusable="false">
+                        <span class="sr-only">Скачать приложение в GppglePLay</span>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <picture class="hero__img">
+                    <source 
+                        media="(max-width: 1023.9px)"
+                        srcset="./images/hero-bg-mobile.webp, ./images/hero-bg-mobile@2x.webp 2x" 
+                        type="image/webp">
+                    <source 
+                        media="(max-width: 1023.9px)"
+                        srcset="./images/hero-bg-mobile.png, ./images/hero-bg-mobile@2x.png 2x" 
+                        type="image/png">
+                    <source 
+                        media="(min-width: 1024px)"
+                        srcset="./images/hero-bg.webp, ./images/hero-bg@2x.webp 2x" 
+                        type="image/webp">   
+                    <img 
+                        src="./images/hero-bg.png" 
+                        srcset="./images/hero-bg@2x.png 2x" 
+                        alt="Приложение ScanNSplit">
+                </picture>
+                <div class="hero__statistics">
+                    <div class="hero__statistics-item">
+                        <p class="hero__statistics-item-title">Средняя оценка</p>
+                        <div class="hero__statistics-item-numb">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star"></use>
+                            </svg>
+                            <span>
+                                4.8<span>/5</span>
+                            </span>
+                        </div>
+                        <p class="hero__statistics-item-text">по всем отзывам</p>
+                    </div>
+                    <div class="hero__statistics-item">
+                        <p class="hero__statistics-item-title">Пользователей</p>
+                        <div class="hero__statistics-item-numb">
+                            <span>
+                                2 млн +
+                            </span>
+                        </div>
+                        <p class="hero__statistics-item-text">Скачали и пользуются</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="possibilities" id="possibilities">
+    <h2 class="sr-only">Возможности приложения Scan and Split</h2>
+    <div class="container">
+        <ul class="possibilities__list">
+            <li class="possibility possibility--bill">
+                <picture class="possibility__image-bg">
+                    <source 
+                        srcset="./images/create-bill.webp, ./images/create-bill@2x.webp 2x" 
+                        type="image/webp">
+                    <img 
+                        src="./images/create-bill.png"
+                        srcset="./images/create-bill@2x.png 2x" 
+                        alt=""
+                        aria-hidden="true"
+                        focusable="false">
+                </picture>
+                <div>
+                    <picture class="possibility__image">
+                        <source 
+                            srcset="./images/possibility-bill.webp, ./images/possibility-bill@2x.webp 2x" 
+                            type="image/webp">
+                        <img 
+                            src="./images/possibility-bill.png"
+                            srcset="./images/possibility-bill@2x.png 2x" 
+                            alt="Делите чек">
+                    </picture>
+                    <h3 class="block-title">Делите чек</h3>
+                    <p class="possibility__desc">Возможность создать чек и разделить траты по чеку между несколькими участниками</p>
+                </div>
+            </li>
+            <li class="possibility possibility--share">
+                <div>
+                    <picture class="possibility__image">
+                        <source 
+                            srcset="./images/possibility-share.webp, ./images/possibility-share@2x.webp 2x" 
+                            type="image/webp">
+                        <img 
+                            src="./images/possibility-share.png"
+                            srcset="./images/possibility-share@2x.png 2x" 
+                            alt="Поделитесь чеком">
+                    </picture>
+                    <h3 class="block-title">Поделитесь чеком</h3>
+                    <p class="possibility__desc">Пользователь создавший чек, может пригласить участников отправив им ссылку для присоединения, либо чек создается вручную</p>
+                </div>
+                <picture class="possibility__image-bg">
+                    <source 
+                        srcset="./images/share-bill.webp, ./images/share-bill@2x.webp 2x" 
+                        type="image/webp">
+                    <img 
+                        src="./images/share-bill.png"
+                        srcset="./images/share-bill@2x.png 2x" 
+                        alt=""
+                        aria-hidden="true"
+                        focusable="false">
+                </picture>
+            </li>
+            <li class="possibility possibility--security">
+                <picture class="possibility__image">
+                    <source 
+                        srcset="./images/possibility-security.webp, ./images/possibility-security@2x.webp 2x" 
+                        type="image/webp">
+                    <img 
+                        src="./images/possibility-security.png"
+                        srcset="./images/possibility-security@2x.png 2x" 
+                        alt="Анонимность и безопасность">
+                </picture>
+                <h3 class="block-title block-title--light">Анонимность и&nbsp;безопасность</h3>
+                <p class="possibility__desc">Участникам чеков не обязательно быть зарегистрированными в приложении</p>
+            </li>
+            <li class="possibility possibility--synchronization">
+                <picture class="possibility__image" >
+                    <source 
+                        srcset="./images/possibility-synchronization.webp, ./images/possibility-synchronization@2x.webp 2x" 
+                        type="image/webp">
+                    <img 
+                        src="./images/possibility-synchronization.png"
+                        srcset="./images/possibility-synchronization@2x.png 2x" 
+                        alt="Мгновенная синхронизация">
+                </picture>
+                <h3 class="block-title">Мгновенная синхронизация</h3>
+                <p class="possibility__desc">Не нужно нажимать кнопку сохранить, чтобы изменения увидели другие</p>
+            </li>
+        </ul>
+    </div>
+</section>
+        <section class="team" id="team">
+    <div class="container">
+        <div class="team__content">
+            <h2 class="block-title block-title--light">О команде</h2>
+            <p class="team__text">Figma ipsum component variant main layer. Ipsum subtract content distribute plugin component figjam figjam star. Undo duplicate figjam arrange.</p>
+            <p class="team__text">Figma ipsum component variant main layer. Ipsum subtract content distribute plugin </p>
+            <ul class="team__social-list">
+                <li>
+                    <a href=".#" class="team__social-link">
+                        <img src="./images/logo-telegram.svg" alt="" aria-hidden="true" focusable="false">
+                        <span class="sr-only">Telegram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href=".#" class="team__social-link">
+                        <img src="./images/logo-linkedin.svg" alt="" aria-hidden="true" focusable="false">
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href=".#" class="team__social-link">
+                        <img src="./images/logo-youtube.svg" alt="" aria-hidden="true" focusable="false">
+                        <span class="sr-only">Youtube</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+        <section class="banner ">
+    <div class="container">
+        <div class="banner__content">
+            <img 
+                src="./images/logo/logo.svg" 
+                alt="" 
+                aria-hidden="true"
+                focusable="false"
+                class="banner__logo">
+            <h2 class="banner__title block-title block-title--light">Скачивай, дели&nbsp;и&nbsp;делись!</h2>
+            <div class="banner__btn-group btn-group">
+                <a 
+                    href=".#" 
+                    target="_blank" 
+                    rel="noopener" 
+                    class="download__link download__link--appstore">
+                    <img src="./images/logo-appstore.svg" alt="" aria-hidden="true" focusable="false">
+                    <span class="sr-only">Скачать приложение в AppStore</span>
+                </a>
+                <a 
+                    href=".#" 
+                    target="_blank" 
+                    rel="noopener" 
+                    class="download__link download__link--googleplay">
+                    <img src="./images/logo-googleplay.svg" alt="" aria-hidden="true" focusable="false">
+                    <span class="sr-only">Скачать приложение в GppglePLay</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    <footer class="footer">
+    <div class="footer__left-part">
+        <span class="footer__copyright">ScanNsplit. Все права защищены. 2025</span>
+        <a 
+            href="mailto:support@scannsplit.com" 
+            target="_blank"
+            class="footer__link">
+            support@scannsplit.com
+        </a>
+    </div>
+    <a href="/privacy-policy.html" class="footer__link">Политика конфиденциальности</a>
+</footer>
+</html>
